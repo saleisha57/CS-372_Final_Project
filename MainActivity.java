@@ -1,6 +1,6 @@
 package com.randomfood.www.final_project;
 
-//import android.content.Intent;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,17 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EditText e = (EditText)MainActivity.this.findViewById(R.id.FavoriteFood);
         favorite_food_type = e.getText().toString();
         init();
-       //Intent intent = new Intent(this, FoodChoice.class);
-       //intent.putExtra("Food");
-       //startActivity(intent);
     }
 
     public void init()
     {
         int number = rand.nextInt(3);
         int number_2 = rand.nextInt(10);
-
-        System.out.println(number_2);
 
         if(number == 0)
         {
@@ -63,55 +58,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             for(i = 0; i < 10; i ++)
                 if(number == 0 && number_2 == i && favorite_food_type.equals("Savory"))
-                    System.out.println("Fast Food: " + ff_savory_choice[i]);
+                {
+                    Intent intent = new Intent(this, DisplayActivity.class);
+                    intent.putExtra("Display", ff_savory_choice[i]);
+                    startActivity(intent);
+                }
 
             for(i = 0; i < 10; i ++)
                 if(number == 0 && number_2 == i && favorite_food_type.equals("Spicy"))
-                    System.out.println("Fast Food: " + ff_spicy_choice[i]);
+                {
+                    Intent intent = new Intent(this, DisplayActivity.class);
+                    intent.putExtra("Display", ff_spicy_choice[i]);
+                    startActivity(intent);
+                }
 
-            /*
-            if(number == 0 && number_2 == 0 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[0]);
-            if(number == 0 && number_2 == 1 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[1]);
-            if(number == 0 && number_2 == 2 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[2]);
-            if(number == 0 && number_2 == 3 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[3]);
-            if(number == 0 && number_2 == 4 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[4]);
-            if(number == 0 && number_2 == 5 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[5]);
-            if(number == 0 && number_2 == 6 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[6]);
-            if(number == 0 && number_2 == 7 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[7]);
-            if(number == 0 && number_2 == 8 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[8]);
-            if(number == 0 && number_2 == 9 && favorite_food_type.equals("Savory"))
-                System.out.println(ff_savory_choice[9]);
-
-            if(number == 0 && number_2 == 0 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[0]);
-            if(number == 0 && number_2 == 1 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[1]);
-            if(number == 0 && number_2 == 2 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[2]);
-            if(number == 0 && number_2 == 3 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[3]);
-            if(number == 0 && number_2 == 4 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[4]);
-            if(number == 0 && number_2 == 5 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[5]);
-            if(number == 0 && number_2 == 6 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[6]);
-            if(number == 0 && number_2 == 7 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[7]);
-            if(number == 0 && number_2 == 8 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[8]);
-            if(number == 0 && number_2 == 9 && favorite_food_type.equals("Spicy"))
-                System.out.println(ff_spicy_choice[9]);
-                */
             ff = 0;
         }//if
 
@@ -127,55 +87,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             for(i = 0; i < 10; i ++)
                 if(number == 1 && number_2 == i && favorite_food_type.equals("Savory"))
-                    System.out.println("Restaurant: " + r_savory_choice[i]);
+                {
+                    Intent intent = new Intent(this, DisplayActivity.class);
+                    intent.putExtra("Display", r_savory_choice[i]);
+                    startActivity(intent);
+                }
 
             for(i = 0; i < 10; i ++)
                 if(number == 1 && number_2 == i && favorite_food_type.equals("Spicy"))
-                    System.out.println("Restaurant: " + r_spicy_choice[i]);
-
-            /*
-            if(number == 1 && number_2 == 0 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[0]);
-            if(number == 1 && number_2 == 1 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[1]);
-            if(number == 1 && number_2 == 2 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[2]);
-            if(number == 1 && number_2 == 3 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[3]);
-            if(number == 1 && number_2 == 4 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[4]);
-            if(number == 1 && number_2 == 5 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[5]);
-            if(number == 1 && number_2 == 6 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[6]);
-            if(number == 1 && number_2 == 7 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[7]);
-            if(number == 1 && number_2 == 8 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[8]);
-            if(number == 1 && number_2 == 9 && favorite_food_type.equals("Savory"))
-                System.out.println(r_savory_choice[9]);
-
-            if(number == 1 && number_2 == 0 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[0]);
-            if(number == 1 && number_2 == 1 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[1]);
-            if(number == 1 && number_2 == 2 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[2]);
-            if(number == 1 && number_2 == 3 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[3]);
-            if(number == 1 && number_2 == 4 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[4]);
-            if(number == 1 && number_2 == 5 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[5]);
-            if(number == 1 && number_2 == 6 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[6]);
-            if(number == 1 && number_2 == 7 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[7]);
-            if(number == 1 && number_2 == 8 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[8]);
-            if(number == 1 && number_2 == 9 && favorite_food_type.equals("Spicy"))
-                System.out.println(r_spicy_choice[9]);
-                */
+                {
+                    Intent intent = new Intent(this, DisplayActivity.class);
+                    intent.putExtra("Display", r_spicy_choice[i]);
+                    startActivity(intent);
+                }
             r = 0;
 
         }//if
@@ -192,11 +116,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             for (i = 0; i < 10; i++)
                 if (number == 2 && number_2 == i && favorite_food_type.equals("Savory"))
-                    System.out.println("Home Cooking: " + hc_savory_choice[i]);
+                {
+                    Intent intent = new Intent(this, DisplayActivity.class);
+                    intent.putExtra("Display", hc_savory_choice[i]);
+                    startActivity(intent);
+                }
 
             for (i = 0; i < 10; i++)
                 if (number == 2 && number_2 == i && favorite_food_type.equals("Spicy"))
-                    System.out.println("Home Cooking: " + hc_spicy_choice[i]);
+                {
+                    Intent intent = new Intent(this, DisplayActivity.class);
+                    intent.putExtra("Display", hc_spicy_choice[i]);
+                    startActivity(intent);
+                }
             hc = 0;
         }//if
 
@@ -209,52 +141,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (ff == 0)
             {
                 ff++;
-                return "Spicy Burrito";
+                return "Fast Food:  Spicy Burrito";
             }
             if (ff == 1)
             {
                 ff++;
-                return "Spicy Chicken";
+                return "fast Food:  Spicy Chicken";
             }
             if (ff == 2)
             {
                 ff++;
-                return "Spicy Taco";
+                return "Fast Food:  Spicy Taco";
             }
             if (ff == 3)
             {
                 ff++;
-                return "Spicy Beef";
+                return "Fast Food:  Spicy Beef";
             }
             if (ff == 4)
             {
                 ff++;
-                return "Spicy Pasta";
+                return "Fast Food:  Spicy Burger";
             }
             if (ff == 5)
             {
                 ff++;
-                return "Spicy Salad";
+                return "Fast Food:  Salad with Spicy Sauce";
             }
             if (ff == 6)
             {
                 ff++;
-                return "Spicy Fish";
+                return "Fast Food:  Spicy Fish Sandwich";
             }
             if (ff == 7)
             {
                 ff++;
-                return "Spicy Soup";
+                return "Fast Food:  Spicy Meat Soup";
             }
             if (ff == 8)
             {
                 ff++;
-                return "Spicy Stuff";
+                return "Fast Food:  Spicy Chicken Sandwich";
             }
             if (ff == 9)
             {
                 ff++;
-                return "Spicy Spice";
+                return "Fast Food:  Spicy Chicken Wings";
             }
         }//while
         ff++;
@@ -268,52 +200,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (ff == 0)
             {
                 ff++;
-                return "Burger";
+                return "Fast Food:  Burger";
             }
             if (ff == 1)
             {
                 ff++;
-                return "Hot Dog";
+                return "Fast Food:  Hot Dog";
             }
             if (ff == 2)
             {
                 ff++;
-                return "Chicken Strips";
+                return "Fast Food:  Chicken Strips";
             }
             if (ff == 3)
             {
                 ff++;
-                return "Breakfast Sandwich";
+                return "Fast Food:  Breakfast Sandwich";
             }
             if (ff == 4)
             {
                 ff++;
-                return "Turkey Sandwich";
+                return "Fast Food:  Turkey Sandwich";
             }
             if (ff == 5)
             {
                 ff++;
-                return "Ham Sandwhich";
+                return "Fast Food:  Ham Sandwich";
             }
             if (ff == 6)
             {
                 ff++;
-                return "Fish Sandwich";
+                return "Fast Food:  Fish Sandwich";
             }
             if (ff == 7)
             {
                 ff++;
-                return "Grilled Cheese";
+                return "Fast Food:  Grilled Cheese";
             }
             if (ff == 8)
             {
                 ff++;
-                return "Fish and Chips";
+                return "Fast Food:  Fish and Chips";
             }
             if (ff == 9)
             {
                 ff++;
-                return "Chicken";
+                return "Fast Food:  Chicken Caesar Salad";
             }
         }//while
         ff++;
@@ -327,52 +259,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (r == 0)
             {
                 r++;
-                return "Spicy Chicken with White Rice";
+                return "Restaurant:  Spicy Chicken with White Rice";
             }
             if (r == 1)
             {
                 r++;
-                return "Spicy Chicken Enchilada with Black Beans and Rice";
+                return "Restaurant:  Spicy Chicken Enchilada with Black Beans and Rice";
             }
             if (r == 2)
             {
                 r++;
-                return "Spicy Sausage with Tomato Sauce";
+                return "Restaurant:  Spicy Sausage with Tomato Sauce";
             }
             if (r == 3)
             {
                 r++;
-                return "Spicy Fish with Tartar Sauce";
+                return "Restaurant:  Spicy Fish with Tartar Sauce";
             }
             if (r == 4)
             {
                 r++;
-                return "Linguine with Spicy Shrimp";
+                return "Restaurant:  Linguine with Spicy Shrimp";
             }
             if (r == 5)
             {
                 r++;
-                return "Chili with Cornbread";
+                return "Restaurant:  Spicy Chili with Cornbread";
             }
             if (r == 6)
             {
                 r++;
-                return "Spicy Sausage Soup with Chopped Kale";
+                return "Restaurant:  Spicy Sausage Soup with Chopped Kale";
             }
             if (r == 7)
             {
                 r++;
-                return "Spicy Other";
+                return "Restaurant:  Spicy Fish with Linguine";
             }
             if (r == 8)
             {
                 r++;
-                return "Spicy";
+                return "Restaurant:  Spicy Fish Tacos with Lime Sauce";
             }
             if (r == 9)
             {
                 r++;
-                return "Spicy";
+                return "Restaurant:  Spicy Shrimp in Cocktail Sauce";
             }
         }//while
         r++;
@@ -386,52 +318,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (r == 0)
             {
                 r++;
-                return "Steak and Onions";
+                return "Restaurant:  Filet Mignon and Onions";
             }
             if (r == 1)
             {
                 r++;
-                return "Surf n' Turf";
+                return "Restaurant:  Surf and Turf";
             }
             if (r == 2)
             {
                 r++;
-                return "Clam Chowder with Garlic Bread";
+                return "Restaurant:  Clam Chowder with Garlic Bread";
             }
             if (r == 3)
             {
                 r++;
-                return "Chicken Fettuccine Alfredo";
+                return "Restaurant:  Chicken Fettuccine Alfredo";
             }
             if (r == 4)
             {
                 r++;
-                return "Chicken Lettuce Wrap";
+                return "Restaurant:  Chicken Lettuce Wrap";
             }
             if (r == 5)
             {
                 r++;
-                return "Baked Chicken with Quinoa";
+                return "Restaurant:  Baked Chicken with Quinoa";
             }
             if (r == 6)
             {
                 r++;
-                return "Baked Tilapia with Boiled Spinach";
+                return "Restaurant:  Baked Tilapia with Boiled Spinach";
             }
             if (r == 7)
             {
                 r++;
-                return "BBQ Ribs with Coleslaw";
+                return "Restaurant:  BBQ Ribs with Coleslaw";
             }
             if (r == 8)
             {
                 r++;
-                return "Lobster Tail with Melted Butter";
+                return "Restaurant:  Lobster Tail with Melted Butter";
             }
             if (r == 9)
             {
                 r++;
-                return "Chicken Noodle Soup and Salad";
+                return "Restaurant:  Chicken Noodle Soup and Salad";
             }
         }//while
         r++;
@@ -446,115 +378,171 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (hc == 0)
             {
                 hc++;
-                return "Spicy Chicken with White Rice";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 1)
             {
                 hc++;
-                return "Spicy Chicken Enchilada with Black Beans and Rice";
+                return "Home Cooking:\n\nSpicy Turkey Chili Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 2)
             {
                 hc++;
-                return "Spicy Sausage with Tomato Sauce";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 3)
             {
                 hc++;
-                return "Spicy Fish with Tartar Sauce";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 4)
             {
                 hc++;
-                return "Linguine with Spicy Shrimp";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 5)
             {
                 hc++;
-                return "Chili with Cornbread";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 6)
             {
                 hc++;
-                return "Spicy Sausage Soup with Chopped Kale";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 7)
             {
                 hc++;
-                return "Spicy Other";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 8)
             {
                 hc++;
-                return "Spicy";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 9)
             {
                 hc++;
-                return "Spicy";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
         }//while
         hc++;
         return "";
     }//home_spicy
 
-    public String get_savory_home()
+    public String get_savory_home() //SAVORY
     {
         while(hc < 10 && favorite_food_type.equals("Savory"))
         {
             if (hc == 0)
             {
                 hc++;
-                return "Stuff and Things" +
-                        "\n" +
-                        "Recipe:\n" +
-                        "Ingredients:\n" +
-                        "65";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 1)
             {
                 hc++;
-                return "Surf n' Turf";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 2)
             {
                 hc++;
-                return "Clam Chowder with Garlic Bread";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 3)
             {
                 hc++;
-                return "Chicken Fettuccine Alfredo";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 4)
             {
                 hc++;
-                return "Chicken Lettuce Wrap";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 5)
             {
                 hc++;
-                return "Baked Chicken with Quinoa";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 6)
             {
                 hc++;
-                return "Baked Tilapia with Boiled Spinach";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 7)
             {
                 hc++;
-                return "BBQ Ribs with Coleslaw";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 8)
             {
                 hc++;
-                return "Lobster Tail with Melted Butter";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
             if (hc == 9)
             {
                 hc++;
-                return "";
+                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
+                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
+                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                        "";
             }
         }//while
         hc++;
