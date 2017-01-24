@@ -1,6 +1,6 @@
 package com.randomfood.www.final_project;
 
-import android.content.Intent;
+//import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -182,24 +182,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(number == 2)
         {
-            System.out.println("Home");
-            /*
             for (i = 0; i < 10; i++) {
-                ff_spicy_choice[i] = get_spicy_fast_food();
-                System.out.println(ff_spicy_choice[i]);
-                //System.out.println(favorite_food_type);
+                hc_spicy_choice[i] = get_spicy_home();
             }//for
-            ff = 0;
+            hc = 0;
             for (i = 0; i < 10; i++) {
-                ff_savory_choice[i] = get_savory_fast_food();
-                System.out.println(ff_savory_choice[i]);
-                //System.out.println(favorite_food_type);
+                hc_savory_choice[i] = get_savory_home();
             }//for
-            ff = 0;
-            */
+
+            for (i = 0; i < 10; i++)
+                if (number == 2 && number_2 == i && favorite_food_type.equals("Savory"))
+                    System.out.println("Home Cooking: " + hc_savory_choice[i]);
+
+            for (i = 0; i < 10; i++)
+                if (number == 2 && number_2 == i && favorite_food_type.equals("Spicy"))
+                    System.out.println("Home Cooking: " + hc_spicy_choice[i]);
+            hc = 0;
         }//if
-
-
 
     }//init
 
@@ -257,11 +256,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ff++;
                 return "Spicy Spice";
             }
-        }
-
+        }//while
         ff++;
         return "";
-    }
+    }//fast_food_spicy
 
     public String get_savory_fast_food()
     {
@@ -317,10 +315,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ff++;
                 return "Chicken";
             }
-        }
+        }//while
         ff++;
         return "";
-    }
+    }//fast_food_savory
 
     public String get_spicy_restaurant()
     {
@@ -376,11 +374,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 r++;
                 return "Spicy";
             }
-        }
-
+        }//while
         r++;
         return "";
-    }
+    }//restaurant_spicy
 
     public String get_savory_restaurant()
     {
@@ -434,13 +431,134 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (r == 9)
             {
                 r++;
-                return "";
+                return "Chicken Noodle Soup and Salad";
             }
-        }
+        }//while
         r++;
         return "";
-    }
+    }//retsaurant_savory
 
 
+    public String get_spicy_home()
+    {
+        while(hc < 10 && favorite_food_type.equals("Spicy"))
+        {
+            if (hc == 0)
+            {
+                hc++;
+                return "Spicy Chicken with White Rice";
+            }
+            if (hc == 1)
+            {
+                hc++;
+                return "Spicy Chicken Enchilada with Black Beans and Rice";
+            }
+            if (hc == 2)
+            {
+                hc++;
+                return "Spicy Sausage with Tomato Sauce";
+            }
+            if (hc == 3)
+            {
+                hc++;
+                return "Spicy Fish with Tartar Sauce";
+            }
+            if (hc == 4)
+            {
+                hc++;
+                return "Linguine with Spicy Shrimp";
+            }
+            if (hc == 5)
+            {
+                hc++;
+                return "Chili with Cornbread";
+            }
+            if (hc == 6)
+            {
+                hc++;
+                return "Spicy Sausage Soup with Chopped Kale";
+            }
+            if (hc == 7)
+            {
+                hc++;
+                return "Spicy Other";
+            }
+            if (hc == 8)
+            {
+                hc++;
+                return "Spicy";
+            }
+            if (hc == 9)
+            {
+                hc++;
+                return "Spicy";
+            }
+        }//while
+        hc++;
+        return "";
+    }//home_spicy
 
-}
+    public String get_savory_home()
+    {
+        while(hc < 10 && favorite_food_type.equals("Savory"))
+        {
+            if (hc == 0)
+            {
+                hc++;
+                return "Stuff and Things" +
+                        "\n" +
+                        "Recipe:\n" +
+                        "Ingredients:\n" +
+                        "65";
+            }
+            if (hc == 1)
+            {
+                hc++;
+                return "Surf n' Turf";
+            }
+            if (hc == 2)
+            {
+                hc++;
+                return "Clam Chowder with Garlic Bread";
+            }
+            if (hc == 3)
+            {
+                hc++;
+                return "Chicken Fettuccine Alfredo";
+            }
+            if (hc == 4)
+            {
+                hc++;
+                return "Chicken Lettuce Wrap";
+            }
+            if (hc == 5)
+            {
+                hc++;
+                return "Baked Chicken with Quinoa";
+            }
+            if (hc == 6)
+            {
+                hc++;
+                return "Baked Tilapia with Boiled Spinach";
+            }
+            if (hc == 7)
+            {
+                hc++;
+                return "BBQ Ribs with Coleslaw";
+            }
+            if (hc == 8)
+            {
+                hc++;
+                return "Lobster Tail with Melted Butter";
+            }
+            if (hc == 9)
+            {
+                hc++;
+                return "";
+            }
+        }//while
+        hc++;
+        return "";
+    }//home_savory
+
+}//end_program
