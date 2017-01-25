@@ -565,7 +565,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (hc == 0)
             {
                 hc++;
-                return "Home Cooking:\n\n Recipe\n\nIngredients:\n\n" +
+                return "Home Cooking:\n\nSpicy Mint Steak Recipe\n\nIngredients:\n\n" +
                         "-3 Tbsp. vegetable or canola oil\n-4 cloves garlic, minced\n" +
                         "-2 - 3 Thai chilies or serrano chilies, stemmed and thinly sliced\n" +
                         "-1 lb. flank steak, very thinly sliced\n-3 medium shallots, thinly sliced\n" +
