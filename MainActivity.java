@@ -541,9 +541,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (hc == 0)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
+                return "Home Cooking:\n\nHot Chicken Salad Recipe\n\nIngredients:\n\n" +
+                        "-3 cups cooked rice\n-6 hard boiled eggs, chopped\n-2 cups celery, chopped\n" +
+                        "-1/2 cups onion, minced\n-2 cups cooked chicken" +
                         "";
             }
             if (hc == 1)
@@ -630,82 +630,138 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (hc == 0)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 1)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSausage Zucchini Casserole Recipe\n\nIngredients:\n\n" +
+                        "-1 lb. bulk sausage\n-1 cup rice, partially cooked\n-1 lb. zucchini\n-2 eggs\n" +
+                        "-1 medium onion, chopped\n-1 garlic bud, chopped\n-1/2 cups parmesan cheese" +
+                        "Cook sausage to remove excess grease. Slight cook the zucchini(2 - 3 cups grated raw)\n" +
+                        "Slightly sautee onions. Mix all ingredients together. Bake at 350 F for 1 hour.\n" +
+                        "Sprinkle with parmesan cheese.";
             }
             if (hc == 2)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 3)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 4)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 5)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 6)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 7)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 8)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
             if (hc == 9)
             {
                 hc++;
-                return "Home Cooking:\n\nSpicy-Honey Glazed Chicken Recipe\n\nIngredients:\n\n" +
-                        "-3 chicken breasts(diced)\n-1 tbsp garlic\n-2tbsp honey\n-5 tbsp soy sauce\n" +
-                        "-2 tbsp sriracha\n-1/2 cup cornstarch\n-1/4 cup sugar\n-1 cup water\n\nInstructions:\n\n" +
-                        "";
+                return "Home Cooking:\n\nSavory Pot Roast Recipe\n\nIngredients:\n\n" +
+                        "-3 to 4 lb. chuck or rump roast\n-1/4 cups flour\n-2 tsp. salt\n1/4 tsp. pepper\n" +
+                        "-2 Tbsp. oil\n-1 medium onion, chopped\n-1 clove garlic, minced\n" +
+                        "-1(14 oz.) can whole tomatoes with juice\n-1 tsp. seasoned salt\n" +
+                        "-1/2 tsp. sugar\n-1/2 tsp. oregano\n\nDirections\n\n" +
+                        "Put, flour, salt, and pepper in a plastic bag, add roast and shake to coat.\n" +
+                        "Brown roast in hot oil in crockpot. Shake flour bag over browned roast and add\n" +
+                        "remaining ingredients. Cover and simmer for 4 - 5 hours on high in crockpot.\n" +
+                        "Thicken sauce with flour or cornstarch and serve over cooked noodles.\n" +
+                        "Serves 6 - 8.";
             }
         }//while
         hc++;
