@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+/**
+ *  This activity will dispay the information to the user in a separate screen from the initial entering screen.
+ * */
+
 public class DisplayActivity extends AppCompatActivity {
 
     String food;

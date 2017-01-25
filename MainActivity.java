@@ -9,6 +9,10 @@ import android.widget.EditText;
 
 import java.util.Random;
 
+/**
+ *  This program will randomly generate a food option for the user based on the food type that they enter.
+ * */
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
     String [] ff_spicy_choice = new String[10];
@@ -36,12 +40,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b.setOnClickListener(this);
     }
 
+    /**
+     *  This method sets up the food type from the users input when they click the button.
+     * */
+
     public void onClick(View v)
     {
         EditText e = (EditText)MainActivity.this.findViewById(R.id.FavoriteFood);
         favorite_food_type = e.getText().toString();
         init();
     }
+
+    /**
+     *  This method fills the arrays with the corresponding information based on the user's input. 3 numers are randomly generated.
+     *  The first number is to determine the food place(home, restaurant, or fast food). The second determines which element of the array
+     *  will displayed to the user. The third number is for the home cooking array, since there are fewer elements than restaurant
+     *  or fast food.
+     * */
 
     public void init()
     {
@@ -173,6 +188,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }//if
 
     }//init
+
+    /**
+     *  The next three methods set up each of the respective fast food options. First is spicy, then savory, then sweet.
+     * */
 
     public String get_spicy_fast_food()
     {
@@ -352,7 +371,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }//fast_food_sweet
 
 
-    // RESTAURANT!!!
+    /**
+     *  The next 3 methods set up each of the respective arrays for the restaurant option. First is spicy, then savory, then sweet.
+     * */
 
     public String get_spicy_restaurant()
     {
@@ -532,8 +553,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }//retsaurant_sweet
 
 
-// HOME COOKING!
-
+    /**
+     *  The next 3 methods set up each of the respective arrays for the home cooking option. First is spicy, then savory, then sweet.
+     *  Each one should print out a recipe depending on random number generation.
+     * */
 
     public String get_spicy_home()
     {
